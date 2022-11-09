@@ -2,27 +2,21 @@ package _09_IS_A_Iliskisi._02_Ornek;
 
 public class Ogrenci extends Kisi{
 
-    private int ogrenciNo;
+    private String ogrenciNo;
 
-
-
-    @Override
-    public String yazdir() {
-
-        return super.yazdir() + " Öğrenci No: "+ this.getOgrenciNo() ;
-    }
-
-
-    public Ogrenci(String isim, String soyIsim, int yas, int ogrenciNo) {
-        super(isim, soyIsim, yas);
+    public Ogrenci(String ad, String soyad, int yas, String ogrenciNo) {
+        super(ad, soyad, yas);
+        // SUPER anahtar kelimesi extend edilen sınıfı gösterir.
         this.ogrenciNo = ogrenciNo;
     }
 
-    public int getOgrenciNo() {
+
+
+    public String getOgrenciNo() {
         return ogrenciNo;
     }
 
-    public void setOgrenciNo(int ogrenciNo) {
+    public void setOgrenciNo(String ogrenciNo) {
         this.ogrenciNo = ogrenciNo;
     }
 }

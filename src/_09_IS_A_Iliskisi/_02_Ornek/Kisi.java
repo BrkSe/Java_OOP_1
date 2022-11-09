@@ -1,31 +1,36 @@
 package _09_IS_A_Iliskisi._02_Ornek;
 
 public class Kisi {
-
-    private String isim;
-    private String soyIsim;
+    private String ad;
+    private String soyad;
     private int yas;
 
-    public Kisi(String isim, String soyIsim, int yas) {
-        this.isim = isim;
-        this.soyIsim = soyIsim;
+    public Kisi(String ad, String soyad, int yas) {
+        this.ad = ad;
+        this.soyad = soyad;
         this.yas = yas;
     }
 
-    public String getIsim() {
-        return isim;
+
+
+    public String yazdir(){
+        return "İsmi : " + this.ad + " Soyisim : " + this.soyad + " Yaş : " + this.yas;
     }
 
-    public void setIsim(String isim) {
-        this.isim = isim;
+    public String getAd() {
+        return ad;
     }
 
-    public String getSoyIsim() {
-        return soyIsim;
+    public void setAd(String ad) {
+        this.ad = ad;
     }
 
-    public void setSoyIsim(String soyIsim) {
-        this.soyIsim = soyIsim;
+    public String getSoyad() {
+        return soyad;
+    }
+
+    public void setSoyad(String soyad) {
+        this.soyad = soyad;
     }
 
     public int getYas() {
@@ -34,9 +39,5 @@ public class Kisi {
 
     public void setYas(int yas) {
         this.yas = yas;
-    }
-
-    public String yazdir() {
-        return " İsmi : " + this.isim + " Soyisim : " + this.soyIsim + " Yaş : " + this.yas;
     }
 }
